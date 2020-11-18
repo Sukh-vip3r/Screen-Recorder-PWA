@@ -1,0 +1,45 @@
+.recordWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+
+  .recording {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    .recordingAction {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 48px;
+
+      mat-icon {
+        font-size: 32px;
+        cursor: pointer;
+      }
+
+      h4 {
+        font-size: 18px;
+      }
+    }
+
+    .actionList{
+      mat-icon{
+        margin: 0 10px;
+        cursor: pointer;
+      }
+    }
+
+
+  }
+}
+
+.box {
+  flex: 1 1 350px;
+  margin: 5px;
+}

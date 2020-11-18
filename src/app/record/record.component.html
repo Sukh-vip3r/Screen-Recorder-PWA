@@ -1,0 +1,29 @@
+<section class="recordWrapper">
+
+    <div class="recording box">
+        <div class="recordingAction">
+            <mat-icon (click)="askForConfirmation()">play_circle_outline</mat-icon>
+            <h4>Start Recording</h4>
+
+        </div>
+        <div class="actionList">
+            <mat-icon>mic</mat-icon>
+            <mat-icon>pause_circle_outline</mat-icon>
+            <mat-icon>stop</mat-icon>
+        </div>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div class="recordingList box">
+        <mat-list>
+            <div mat-subheader>Recent Recordings</div>
+            <mat-list-item *ngFor="let folder of folders">
+                <mat-icon mat-list-icon>folder</mat-icon>
+                <div mat-line>{{folder.name}}</div>
+                <div mat-line> {{folder.updated | date}} </div>
+            </mat-list-item>
+        </mat-list>
+    </div>
+</section>
+
+<audio #audioSrc controls></audio>
+<video #videoSrc controls></video>

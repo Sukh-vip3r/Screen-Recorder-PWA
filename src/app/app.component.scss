@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+
+  nav {
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: #1f5463;
+  }
+
+  .outletWrapper {
+    flex-grow: 1;
+  }
+}

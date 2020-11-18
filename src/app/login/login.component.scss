@@ -1,0 +1,45 @@
+header {
+  height: 50px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 1.5rem;
+
+  .headerMenu {
+    place-self: center;
+  }
+
+  .headerText {
+    grid-column: 6 / 8;
+    place-self: center;
+
+    h2 {
+      font-weight: 300;
+      letter-spacing: 2px;
+      color: #47474c;
+    }
+  }
+
+  .headerSearch {
+    grid-column: 12 / span 1;
+    justify-self: center;
+  }
+
+}
+
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
